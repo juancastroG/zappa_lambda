@@ -2,9 +2,13 @@
     "dev": {
         "app_function": "app.lambdaf",
         "aws_region": "us-east-1",
-        "profile_name": "default",
         "project_name": "zappa-lambda",
         "runtime": "python3.8",
-        "s3_bucket": "zappa-ej8reqceh"
+        "s3_bucket": "zappa-ej8reqceh",
+        "keep_warm":false,
+        "role_name":"LabRole",
+        "manage_roles":false,
+        "apigateway_enable":false
+
     }
 }
